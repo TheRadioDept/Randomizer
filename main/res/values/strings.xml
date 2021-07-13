@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Randomizer</string>
+    <string name="request">Введите варианты из которых нужно выбрать.</string>
+    <string name="button">Генерация</string>
+</resources>
