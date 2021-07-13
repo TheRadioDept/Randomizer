@@ -39,12 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     //creating method for randomly choosing one of the user inputs
                     Random rand = new Random();
-                    EditText[] userInputs = {user_input, user_input1};
-                    int randomAnswer = rand.nextInt(userInputs.length);
-                    result = userInputs[randomAnswer];
-                    result.setText(result.getText().toString().trim());
-
-                    Log.v("EditText", result.getText().toString());
+                    String[] key = {user_input1.getText().toString().trim(), user_input.getText().toString().trim()};
+                        int randomAnswer = rand.nextInt(key.length);
+                        result.setText(key[randomAnswer].toString().trim());
             }}
         });
     }
